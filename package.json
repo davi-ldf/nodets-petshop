@@ -1,0 +1,15 @@
+{
+  "name": "nodets-petshop",
+  "version": "1.0.0",
+  "description": "Projeto em NodeJS e Typescript de Petshop onde uma API com vários animais é consumida afim de os exibir segregados por categorias, e até mesmo de forma pesquisada.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nodets-petshop"
+  },
+  "author": "davi-ldf",
+  "license": "MIT"
+}
