@@ -1,3 +1,13 @@
+Dependências globais obrigatórias para rodar o projeto:
+nodemon
+typescript
+ts-node
+
+Como instalar?
+
+npm install -g nodemon typescript ts-node
+
+
 Passo a Passo:
 npm init
 
