@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "Projeto em NodeJS e Typescript de Petshop onde uma API com vários animais é consumida afim de os exibir segregados por categorias, e até mesmo de forma pesquisada.",
   "main": "index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "postinstall": "npm run build && copyfiles -u 1 src/**/*.mustache dist/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
   "repository": {
     "type": "git",
-    "url": "nodets-petshop"
+    "url": "git+https://github.com/davi-ldf/nodets-petshop"
   },
   "author": "davi-ldf",
   "license": "MIT",
@@ -21,6 +27,7 @@
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/mustache-express": "^1.2.5",
-    "@types/node": "^22.10.1"
+    "@types/node": "^22.10.1",
+    "copyfiles": "^2.4.1"
   }
 }
